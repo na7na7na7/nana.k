@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>mission_4</title>
+  </head>
+
+  <body>
+   <form action="mission_4.php" method="post">
+   <p><input type="text" name="name" value="<?php echo $editname; ?>" placeholder="名前"></p>
+   <p><input type="text" name="comment" value="<?php echo $editcomment; ?>" placeholder="コメント"></p>
+   <p><input type="text" name="password" placeholder="パスワード"></p> <p><input type="submit" value="送信"></p>
+   <p><input type="hidden" name="hide" value="<?php echo $arraylist[0]; ?>"></p>
+   </form>
+
+	<form action="mission_4.php" method="post">
+	<p><input type="text" name="delete" placeholder="削除対象番号"> 
+	<p><input type="text" name="password_d" placeholder="パスワード"></p> <input type="submit" value="削除"></p>
+	</form>  
+  <form action="mission_4.php" method="post">
+  <p><input type="text" name="edit" placeholder="編集対象番号" >
+  <p><input type="text" name="password_e" placeholder="パスワード"></p> <input type="submit"value="編集"></p>
+  </form>
+
+  </body>
+</html>
